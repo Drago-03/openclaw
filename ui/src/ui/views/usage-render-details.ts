@@ -500,9 +500,9 @@ function renderTimeSeriesCompact(
         </div>
       </div>
       <div class="timeseries-chart-wrapper" style="position: relative; cursor: crosshair;">
-        <svg 
-          viewBox="0 0 ${width} ${height + 18}" 
-          class="timeseries-svg" 
+        <svg
+          viewBox="0 0 ${width} ${height + 18}"
+          class="timeseries-svg"
           style="width: 100%; height: auto; display: block;"
         >
           <!-- Y axis -->
@@ -570,13 +570,13 @@ function renderTimeSeriesCompact(
           })}
           <!-- Selection highlight overlay (always visible between handles) -->
           ${svg`
-            <rect 
-              x="${leftHandleX}" 
-              y="${padding.top}" 
-              width="${Math.max(1, rightHandleX - leftHandleX)}" 
-              height="${chartHeight}" 
-              fill="var(--accent)" 
-              opacity="${CHART_SELECTION_OPACITY}" 
+            <rect
+              x="${leftHandleX}"
+              y="${padding.top}"
+              width="${Math.max(1, rightHandleX - leftHandleX)}"
+              height="${chartHeight}"
+              fill="var(--accent)"
+              opacity="${CHART_SELECTION_OPACITY}"
               pointer-events="none"
             />
           `}
@@ -660,10 +660,10 @@ function renderTimeSeriesCompact(
           };
 
           return html`
-            <div class="chart-handle-zone chart-handle-left" 
+            <div class="chart-handle-zone chart-handle-left"
                  style="left: ${leftHandlePos};"
                  @mousedown=${makeDragHandler("left")}></div>
-            <div class="chart-handle-zone chart-handle-right" 
+            <div class="chart-handle-zone chart-handle-right"
                  style="left: ${rightHandlePos};"
                  @mousedown=${makeDragHandler("right")}></div>
           `;
@@ -673,9 +673,9 @@ function renderTimeSeriesCompact(
         ${
           hasSelection
             ? html`
-              <span style="color: var(--accent);">▶ Turns ${rangeStartIdx + 1}–${rangeEndIdx} of ${points.length}</span> · 
-              ${new Date(rangeStartTs).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}–${new Date(rangeEndTs).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })} · 
-              ${formatTokens(filteredOutput + filteredInput + filteredCacheRead + filteredCacheWrite)} · 
+              <span style="color: var(--accent);">▶ Turns ${rangeStartIdx + 1}–${rangeEndIdx} of ${points.length}</span> ·
+              ${new Date(rangeStartTs).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })}–${new Date(rangeEndTs).toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" })} ·
+              ${formatTokens(filteredOutput + filteredInput + filteredCacheRead + filteredCacheWrite)} ·
               ${formatCost(filteredPoints.reduce((s, p) => s + (p.cost || 0), 0))}
             `
             : html`${points.length} msgs · ${formatTokens(cumTokens)} · ${formatCost(cumCost)}`
