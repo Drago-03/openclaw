@@ -26,13 +26,13 @@ console.log(translations["Save"]); // 输出：保存
 
 ## 🛠️ 工具说明
 
-- `scripts/extract-strings.js`  
+- `scripts/extract-strings.js`
   从 OpenClaw 源代码中提取所有可翻译的字符串。
 
-- `scripts/filter-real-ui.js`  
+- `scripts/filter-real-ui.js`
   智能过滤出真正的界面文本，排除代码片段和变量名。
 
-- `scripts/smart-translate.js`  
+- `scripts/smart-translate.js`
   应用技术术语词典和简单翻译规则进行批量翻译。
 
 ## 📁 项目结构
