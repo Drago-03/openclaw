@@ -1,5 +1,5 @@
 export const usageStylesPart3 = `
-  
+
   /* ===== COMPACT DAILY CHART ===== */
   .daily-chart-compact {
     margin-bottom: 16px;
@@ -11,7 +11,7 @@ export const usageStylesPart3 = `
     height: 100px;
     padding-bottom: 20px;
   }
-  
+
   /* ===== COMPACT COST BREAKDOWN ===== */
   .cost-breakdown-compact {
     padding: 0;
@@ -29,7 +29,7 @@ export const usageStylesPart3 = `
   .cost-breakdown-compact .cost-breakdown-note {
     display: none;
   }
-  
+
   /* ===== SESSIONS CARD ===== */
   .sessions-card {
     /* inherits background, border, shadow from .card */
@@ -144,7 +144,7 @@ export const usageStylesPart3 = `
   .sessions-clear-btn {
     margin-left: auto;
   }
-  
+
   /* ===== EMPTY DETAIL STATE ===== */
   .session-detail-empty {
     margin-top: 18px;
@@ -182,7 +182,7 @@ export const usageStylesPart3 = `
   .session-detail-empty-feature .icon {
     font-size: 16px;
   }
-  
+
   /* ===== SESSION DETAIL PANEL ===== */
   .session-detail-panel {
     margin-top: 12px;
@@ -353,7 +353,7 @@ export const usageStylesPart3 = `
     border-color: var(--border-strong);
     background: var(--bg);
   }
-  
+
   /* ===== COMPACT TIMESERIES ===== */
   .session-timeseries-compact {
     background: var(--bg);
@@ -372,7 +372,7 @@ export const usageStylesPart3 = `
     font-size: 11px;
     margin-top: 8px;
   }
-  
+
   /* ===== COMPACT CONTEXT ===== */
   .context-weight-compact {
     background: var(--bg);
@@ -408,7 +408,7 @@ export const usageStylesPart3 = `
     font-size: 12px;
     padding: 6px 10px;
   }
-  
+
   /* ===== COMPACT LOGS ===== */
   .session-logs-compact {
     background: var(--bg);

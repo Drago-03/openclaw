@@ -682,7 +682,7 @@ export const usageStylesPart2 = `
     display: flex;
     flex-direction: column;
   }
-  
+
   /* ===== LEFT CARD (Daily + Breakdown) ===== */
   .usage-left-card {
     /* inherits background, border, shadow from .card */

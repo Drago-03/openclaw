@@ -40,4 +40,3 @@ public enum NetworkInterfaces {
         return en0 ?? fallback
     }
 }
-
