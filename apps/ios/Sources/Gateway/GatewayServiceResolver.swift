@@ -52,4 +52,3 @@ final class GatewayServiceResolver: NSObject, NetServiceDelegate {
         return trimmed.hasSuffix(".") ? String(trimmed.dropLast()) : trimmed
     }
 }
-
