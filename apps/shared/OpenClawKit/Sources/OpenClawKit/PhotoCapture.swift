@@ -16,4 +16,3 @@ public enum PhotoCapture {
             maxBytes: maxEncodedBytes)
     }
 }
-
