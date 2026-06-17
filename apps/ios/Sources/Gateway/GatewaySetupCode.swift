@@ -39,4 +39,3 @@ enum GatewaySetupCode {
         return String(data: data, encoding: .utf8)
     }
 }
-
