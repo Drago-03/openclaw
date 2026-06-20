@@ -138,7 +138,7 @@ class AppUpdateHandler(
               .setContentTitle("OpenClaw Update")
               .setContentText(text)
               .setProgress(max, progress, max == 0)
-              
+
               .setContentIntent(launchPi)
               .setOngoing(true)
               .build()
@@ -156,7 +156,7 @@ class AppUpdateHandler(
             notifManager.notify(notifId, android.app.Notification.Builder(appContext, channelId)
               .setSmallIcon(android.R.drawable.stat_notify_error)
               .setContentTitle("Update Failed")
-              
+
               .setContentIntent(launchPi)
               .setContentText("HTTP ${response.code}")
               .build())
@@ -229,7 +229,7 @@ class AppUpdateHandler(
             notifManager.notify(notifId, android.app.Notification.Builder(appContext, channelId)
               .setSmallIcon(android.R.drawable.stat_notify_error)
               .setContentTitle("Update Failed")
-              
+
               .setContentIntent(launchPi)
               .setContentText("Downloaded file is not a valid APK")
               .build())
@@ -274,7 +274,7 @@ class AppUpdateHandler(
           notifManager.notify(notifId, android.app.Notification.Builder(appContext, channelId)
             .setSmallIcon(android.R.drawable.stat_notify_error)
             .setContentTitle("Update Failed")
-            
+
               .setContentIntent(launchPi)
               .setContentText(err.message ?: "Unknown error")
             .build())
