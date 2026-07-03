@@ -630,7 +630,7 @@ export function renderUsage(props: UsageProps) {
             Refresh
           </button>
         </div>
-        
+
       </div>
 
       <div style="margin-top: 12px;">
