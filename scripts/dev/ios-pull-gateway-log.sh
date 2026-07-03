@@ -14,4 +14,3 @@ xcrun devicectl device copy from \
 
 echo "Pulled to: $DEST"
 tail -n 200 "$DEST"
-
