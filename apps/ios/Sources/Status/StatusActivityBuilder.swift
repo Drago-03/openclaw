@@ -68,4 +68,3 @@ enum StatusActivityBuilder {
         return nil
     }
 }
-
